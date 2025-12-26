@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata in this file."
+title: "PromptGroundBoxBench"
+type: software
+authors:
+  - name: "PromptGroundBoxBench Authors"
+version: "0.1.0"
+date-released: "2025-12-23"
+license: "MIT"
+repository-code: "https://github.com/<your-org-or-user>/PromptGroundBoxBench"

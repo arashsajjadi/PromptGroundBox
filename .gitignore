@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+
+# Environments
+.venv/
+.conda/
+env/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data
+data/
+
+# Reports
+reports/
+
+# Model weights
+*.pt
+*.pth
+*.onnx
+*.safetensors
+
+
+# Runs
+runs/
+
+# Keep only visuals inside runs/vehicles_A
+!runs/vehicles_A/
+!runs/vehicles_A/visuals/
+!runs/vehicles_A/visuals/**
