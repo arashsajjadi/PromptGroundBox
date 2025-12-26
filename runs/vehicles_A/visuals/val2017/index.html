@@ -1,0 +1,220 @@
+<!doctype html>
+<html><head><meta charset='utf-8'/>
+<title>PromptGroundBoxBench visual report (val2017)</title>
+<style>
+body{font-family:Arial, sans-serif; margin:20px;}
+h1{margin-bottom:6px;}
+h2{margin-top:26px;}
+.grid{display:grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap:14px;}
+.card{border:1px solid #ddd; border-radius:10px; padding:10px;}
+img{max-width:100%; height:auto; border-radius:8px;}
+.cap{font-size:13px; color:#333; margin-top:6px;}
+</style></head><body>
+<h1>PromptGroundBoxBench visual report (val2017)</h1>
+<h2>Summary plots</h2>
+<div class='grid'>
+<div class='card'>
+<a href='table_cocoeval_metrics.png' target='_blank'><img src='table_cocoeval_metrics.png'/></a>
+<div class='cap'>COCOeval metrics table</div>
+</div>
+<div class='card'>
+<a href='table_best_f1_iou50.png' target='_blank'><img src='table_best_f1_iou50.png'/></a>
+<div class='cap'>Best F1 table at IoU 0.50</div>
+</div>
+<div class='card'>
+<a href='bars_ap_family.png' target='_blank'><img src='bars_ap_family.png'/></a>
+<div class='cap'>AP family bars</div>
+</div>
+<div class='card'>
+<a href='bars_ap_by_area.png' target='_blank'><img src='bars_ap_by_area.png'/></a>
+<div class='cap'>AP by area bars</div>
+</div>
+<div class='card'>
+<a href='bars_ar100.png' target='_blank'><img src='bars_ar100.png'/></a>
+<div class='cap'>AR100 bar</div>
+</div>
+<div class='card'>
+<a href='latency_bars.png' target='_blank'><img src='latency_bars.png'/></a>
+<div class='cap'>Latency bars</div>
+</div>
+<div class='card'>
+<a href='hist_tp_iou_grounding_dino.png' target='_blank'><img src='hist_tp_iou_grounding_dino.png'/></a>
+<div class='cap'>TP IoU hist (Grounding DINO)</div>
+</div>
+<div class='card'>
+<a href='hist_tp_score_grounding_dino.png' target='_blank'><img src='hist_tp_score_grounding_dino.png'/></a>
+<div class='cap'>TP score hist (Grounding DINO)</div>
+</div>
+<div class='card'>
+<a href='hist_tp_iou_yolo.png' target='_blank'><img src='hist_tp_iou_yolo.png'/></a>
+<div class='cap'>TP IoU hist (YOLO)</div>
+</div>
+<div class='card'>
+<a href='hist_tp_score_yolo.png' target='_blank'><img src='hist_tp_score_yolo.png'/></a>
+<div class='cap'>TP score hist (YOLO)</div>
+</div>
+<div class='card'>
+<a href='hist_per_image_tp_grounding_dino.png' target='_blank'><img src='hist_per_image_tp_grounding_dino.png'/></a>
+<div class='cap'>Per image TP (Grounding DINO)</div>
+</div>
+<div class='card'>
+<a href='hist_per_image_fp_grounding_dino.png' target='_blank'><img src='hist_per_image_fp_grounding_dino.png'/></a>
+<div class='cap'>Per image FP (Grounding DINO)</div>
+</div>
+<div class='card'>
+<a href='hist_per_image_fn_grounding_dino.png' target='_blank'><img src='hist_per_image_fn_grounding_dino.png'/></a>
+<div class='cap'>Per image FN (Grounding DINO)</div>
+</div>
+<div class='card'>
+<a href='hist_per_image_tp_yolo.png' target='_blank'><img src='hist_per_image_tp_yolo.png'/></a>
+<div class='cap'>Per image TP (YOLO)</div>
+</div>
+<div class='card'>
+<a href='hist_per_image_fp_yolo.png' target='_blank'><img src='hist_per_image_fp_yolo.png'/></a>
+<div class='cap'>Per image FP (YOLO)</div>
+</div>
+<div class='card'>
+<a href='hist_per_image_fn_yolo.png' target='_blank'><img src='hist_per_image_fn_yolo.png'/></a>
+<div class='cap'>Per image FN (YOLO)</div>
+</div>
+<div class='card'>
+<a href='pr_grounding_dino.png' target='_blank'><img src='pr_grounding_dino.png'/></a>
+<div class='cap'>PR curve Grounding DINO</div>
+</div>
+<div class='card'>
+<a href='pr_yolo.png' target='_blank'><img src='pr_yolo.png'/></a>
+<div class='cap'>PR curve YOLO</div>
+</div>
+</div>
+<h2>Qualitative overlays</h2>
+<div class='grid'>
+<div class='card'>
+<a href='qualitative/000052_gd.png' target='_blank'><img src='qualitative/000052_gd.png'/></a>
+<div class='cap'>52 Grounding DINO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000052_yolo.png' target='_blank'><img src='qualitative/000052_yolo.png'/></a>
+<div class='cap'>52 YOLO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000017_gd.png' target='_blank'><img src='qualitative/000017_gd.png'/></a>
+<div class='cap'>17 Grounding DINO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000017_yolo.png' target='_blank'><img src='qualitative/000017_yolo.png'/></a>
+<div class='cap'>17 YOLO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000030_gd.png' target='_blank'><img src='qualitative/000030_gd.png'/></a>
+<div class='cap'>30 Grounding DINO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000030_yolo.png' target='_blank'><img src='qualitative/000030_yolo.png'/></a>
+<div class='cap'>30 YOLO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000041_gd.png' target='_blank'><img src='qualitative/000041_gd.png'/></a>
+<div class='cap'>41 Grounding DINO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000041_yolo.png' target='_blank'><img src='qualitative/000041_yolo.png'/></a>
+<div class='cap'>41 YOLO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000037_gd.png' target='_blank'><img src='qualitative/000037_gd.png'/></a>
+<div class='cap'>37 Grounding DINO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000037_yolo.png' target='_blank'><img src='qualitative/000037_yolo.png'/></a>
+<div class='cap'>37 YOLO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000014_gd.png' target='_blank'><img src='qualitative/000014_gd.png'/></a>
+<div class='cap'>14 Grounding DINO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000014_yolo.png' target='_blank'><img src='qualitative/000014_yolo.png'/></a>
+<div class='cap'>14 YOLO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000024_gd.png' target='_blank'><img src='qualitative/000024_gd.png'/></a>
+<div class='cap'>24 Grounding DINO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000024_yolo.png' target='_blank'><img src='qualitative/000024_yolo.png'/></a>
+<div class='cap'>24 YOLO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000036_gd.png' target='_blank'><img src='qualitative/000036_gd.png'/></a>
+<div class='cap'>36 Grounding DINO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000036_yolo.png' target='_blank'><img src='qualitative/000036_yolo.png'/></a>
+<div class='cap'>36 YOLO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000006_gd.png' target='_blank'><img src='qualitative/000006_gd.png'/></a>
+<div class='cap'>6 Grounding DINO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000006_yolo.png' target='_blank'><img src='qualitative/000006_yolo.png'/></a>
+<div class='cap'>6 YOLO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000011_gd.png' target='_blank'><img src='qualitative/000011_gd.png'/></a>
+<div class='cap'>11 Grounding DINO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000011_yolo.png' target='_blank'><img src='qualitative/000011_yolo.png'/></a>
+<div class='cap'>11 YOLO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000013_gd.png' target='_blank'><img src='qualitative/000013_gd.png'/></a>
+<div class='cap'>13 Grounding DINO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000013_yolo.png' target='_blank'><img src='qualitative/000013_yolo.png'/></a>
+<div class='cap'>13 YOLO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000059_gd.png' target='_blank'><img src='qualitative/000059_gd.png'/></a>
+<div class='cap'>59 Grounding DINO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000059_yolo.png' target='_blank'><img src='qualitative/000059_yolo.png'/></a>
+<div class='cap'>59 YOLO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000065_gd.png' target='_blank'><img src='qualitative/000065_gd.png'/></a>
+<div class='cap'>65 Grounding DINO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000065_yolo.png' target='_blank'><img src='qualitative/000065_yolo.png'/></a>
+<div class='cap'>65 YOLO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000032_gd.png' target='_blank'><img src='qualitative/000032_gd.png'/></a>
+<div class='cap'>32 Grounding DINO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000032_yolo.png' target='_blank'><img src='qualitative/000032_yolo.png'/></a>
+<div class='cap'>32 YOLO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000055_gd.png' target='_blank'><img src='qualitative/000055_gd.png'/></a>
+<div class='cap'>55 Grounding DINO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000055_yolo.png' target='_blank'><img src='qualitative/000055_yolo.png'/></a>
+<div class='cap'>55 YOLO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000020_gd.png' target='_blank'><img src='qualitative/000020_gd.png'/></a>
+<div class='cap'>20 Grounding DINO overlay</div>
+</div>
+<div class='card'>
+<a href='qualitative/000020_yolo.png' target='_blank'><img src='qualitative/000020_yolo.png'/></a>
+<div class='cap'>20 YOLO overlay</div>
+</div>
+</div>
+</body></html>

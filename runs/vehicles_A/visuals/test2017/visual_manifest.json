@@ -1,0 +1,14 @@
+{
+  "root": "data\\vehicles_coco_vehicle",
+  "split": "test2017",
+  "run_dir": "runs\\vehicles_A",
+  "out_root": "runs\\vehicles_A\\visuals\\test2017",
+  "iou_thr": 0.5,
+  "score_thr": {
+    "grounding_dino": 0.0,
+    "yolo": 0.0
+  },
+  "files": {
+    "html": "runs\\vehicles_A\\visuals\\test2017\\index.html"
+  }
+}

@@ -21,23 +21,26 @@ venv/
 .DS_Store
 Thumbs.db
 
-# Data
+# Data and reports (heavy / local)
 data/
-
-# Reports
 reports/
 
-# Model weights
+# Model weights (never commit)
 *.pt
 *.pth
 *.onnx
 *.safetensors
 
+# Runs (ignore everything by default)
+runs/*
 
-# Runs
-runs/
-
-# Keep only visuals inside runs/vehicles_A
+# Allow keeping ONLY the visuals artifact for vehicles_A in the repo
 !runs/vehicles_A/
 !runs/vehicles_A/visuals/
 !runs/vehicles_A/visuals/**
+
+# Optional: ignore other common large artifacts anywhere
+*.zip
+*.tar
+*.tar.gz
+*.7z
